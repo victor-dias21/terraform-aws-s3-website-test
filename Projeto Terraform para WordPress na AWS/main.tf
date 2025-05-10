@@ -34,7 +34,7 @@ resource "aws_instance" "wordpress" {
   instance_type              = "t2.micro"
   subnet_id                  = var.subnet_id
   vpc_security_group_ids     = [aws_security_group.ec2_sg.id]
-  iam_instance_profile       = "arn:aws:iam::024143006318:instance-profile/EC2TerraformRole"
+  iam_instance_profile       = "EC2TerraformRole"
   user_data                  = file("user_data.sh")
   associate_public_ip_address = true
   tags = {
