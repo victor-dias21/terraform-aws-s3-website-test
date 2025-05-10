@@ -1,4 +1,9 @@
-output "website_endpoint" {
-  description = "Website endpoint URL"
-  value       = "http://${aws_s3_bucket_website_configuration.s3_bucket.website_endpoint}/index.html"
+output "instance_public_ip" {
+  description = "IP público da instância EC2"
+  value       = aws_instance.wordpress.public_ip
+}
+
+output "instance_id" {
+  description = "ID da instância EC2 criada"
+  value       = aws_instance.wordpress.id
 }

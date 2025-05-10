@@ -1,10 +1,5 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0.1"
-    }
-  }
-
-  required_version = "~> 1.2"
-}
+region    = "sa-east-1"
+vpc_id    = "vpc-0d3673fa276dd7d66"
+subnet_id = "subnet-011ebfe087b28d9f5"
+ami_id    = "ami-0eab6be2916bd677c"
+key_pair  = "wordPress-ec2-key3.pem"

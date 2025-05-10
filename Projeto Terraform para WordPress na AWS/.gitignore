@@ -1,0 +1,18 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+*.tfvars
+override.tf
+override.tf.json
+terraform.tfvars.json
+
+# Chaves SSH
+*.pem
+
+# Outros arquivos sensíveis
+*.key
+*.crt
+*.env
+*.sh
